@@ -561,6 +561,7 @@ body.menu-open {
     .nav-link {
         font-size: 14px;     /* 字體大小 */
         font-weight: 500;    /* 字體粗細 */
+        color: #fff;         /* 文字顏色 - 白色 */
         padding: 0.5rem 0;   /* 上下內距 */
         position: relative;  /* 相對定位 */
         white-space: nowrap; /* 防止文字換行 */
@@ -568,6 +569,16 @@ body.menu-open {
     
     .nav-link:hover {
         color: #f7bc51;      /* 懸停時品牌色 */
+    }
+    
+    /* 滾動後桌面版導航連結顏色調整 */
+    header.scrolled .nav-link {
+        color: #333;         /* 滾動後文字顏色 - 深灰色 */
+    }
+    
+    /* 滾動後桌面版社群圖示顏色調整 */
+    header.scrolled .social-icons a {
+        color: #333 !important;         /* 滾動後圖示顏色 - 深灰色 */
     }
     
     /* 桌面版社群圖示 - 調整位置和樣式 */
@@ -592,7 +603,7 @@ body.menu-open {
     /* 桌面版社群圖示連結 - 調整大小和樣式 */
     .navbar-collapse .social-icons a,
     .social-icons a {
-        color: #000 !important;         /* 圖示顏色 */
+        color: #fff !important;         /* 圖示顏色 - 白色 */
         font-size: 1.25rem !important;  /* 圖示大小 - 與內聯樣式保持一致 */
         transition: color 0.3s ease !important; /* 顏色過渡效果 */
         width: 20px !important;         /* 連結寬度 */
