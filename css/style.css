@@ -19,16 +19,10 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
     line-height: 1.6;
     color: #333;
-    overflow-x: hidden; /* 防止水平滾動 */
-    width: 100%;
-    max-width: 100vw;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
 }
-
-/* ===== FONT DEFINITIONS ===== */
-/* 使用 Google Fonts ABeeZee 字體，已在 HTML 中引入 */
 
 /* ===== UTILITY CLASSES ===== */
 .animate-on-scroll {
@@ -84,11 +78,10 @@ body {
 }
 
 /* ===== HERO SECTION ===== */
-/* 主要橫幅區塊樣式 - 關於我們頁面專用 */
 .hero {
     position: relative;
     height: 700px;
-    background-image: url('../images/hero/0423_01.png');
+    background-image: url('../images/hero/0416_20.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,11 +92,10 @@ body {
     color: #fff;
 }
 
-/* About Hero Section - 從 about.css 整合 */
 .about-hero {
     position: relative;
     height: 700px;
-    background-image: url('../images/hero/0623_06.png');
+    background-image: url('../images/hero/0416_20.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -173,398 +165,19 @@ body {
     color: #fff;
 }
 
-/* 移除未使用的樣式，因為HTML使用Bootstrap類別 */
-
-/* ===== ABOUT STORY SECTION ===== */
-.about-story {
+/* ===== SHOWCASE SECTION ===== */
+.showcase-section {
     background-color: #fff;
     padding: 5rem 0;
 }
-
-/* 移除未使用的樣式，因為HTML使用Bootstrap容器 */
-
-/* 移除可能與Bootstrap衝突的樣式 */
-
-/* 移除未使用的樣式 */
-
-/* 移除未使用的樣式 */
-
-/* 移除未使用的CSS Grid樣式，因為HTML使用Bootstrap網格系統 */
-
-/* 移除可能與Bootstrap衝突的樣式 */
-
-.story-image {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.story-image:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-}
-
-.story-image img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.story-image:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-}
-
-.story-image:hover .overlay {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.overlay-content {
-    text-align: center;
-}
-
-.overlay-content span {
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-.story-image:hover .overlay-content span {
-    background: transparent;
-    color: #fff;
-}
-
-.story-text {
-    padding: 2rem;
-    background: #fff;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.story-text h3 {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 1.5rem;
-}
-
-.story-text p {
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 0.875rem; /* 14px */
-    font-weight: 300;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 1rem;
-}
-
-/* 移除未使用的樣式 */
-
-/* ===== ABOUT TEAM SECTION ===== */
-.about-team {
-    background-color: #f8f9fa;
-    padding: 5rem 0;
-}
-
-/* 移除可能與Bootstrap衝突的樣式 */
-
-/* 移除未使用的CSS Grid樣式，因為HTML使用Bootstrap網格系統 */
-
-.team-member {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    background: #fff;
-    cursor: pointer;
-}
-
-.team-member:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-    transition: all 0.3s ease;
-}
-
-.member-image {
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.member-image img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover .member-image img {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.member-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
-    color: #fff;
-}
-
-.member-info h3 {
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-}
-
-.member-info p {
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    color: #f7bc51;
-}
-
-.team-text {
-    padding: 2rem;
-    background: #fff;
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.team-text h3 {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-/* ===== TEXT CAROUSEL ===== */
-.text-carousel-container {
-    position: relative;
-    width: 100%;
-    min-height: 550px;
-    overflow: hidden;
-}
-
-.carousel-navigation {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.carousel-btn {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #f7bc51;
-    background: transparent;
-    color: #f7bc51;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-    font-weight: bold;
-    outline: none;
-}
-
-.carousel-btn.active {
-    background: #f7bc51;
-    color: #fff;
-    transform: scale(1.05);
-}
-
-.carousel-btn:hover,
-.carousel-btn:focus {
-    background: #f7bc51;
-    color: #fff;
-    transform: scale(1.1);
-}
-
-.carousel-btn:not(.active):hover,
-.carousel-btn:not(.active):focus {
-    background: rgba(247, 188, 81, 0.1);
-    color: #f7bc51;
-}
-
-.carousel-content {
-    position: relative;
-    width: 100%;
-    height: 750px; /* 固定高度以第二段文字為準 */
-    overflow: hidden;
-}
-
-.message-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transform: translateX(100%);
-    transition: all 0.5s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1.5rem;
-    z-index: 1;
-    overflow-y: auto;
-}
-
-.message-content[data-slide="0"] {
-    transform: translateX(-100%);
-}
-
-.message-content[data-slide="1"] {
-    transform: translateX(100%);
-}
-
-.message-content.active {
-    opacity: 1;
-    transform: translateX(0) !important;
-    z-index: 2;
-    overflow-y: auto;
-}
-
-.message-content p {
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 1rem;
-    text-align: justify;
-}
-
-.message-content strong {
-    color: #333;
-    font-weight: 500;
-}
-
-.message-content a {
-    color: #f7bc51;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.message-content a:hover {
-    text-decoration: underline;
-}
-
-/* ===== ABOUT CONTACT SECTION ===== */
-.about-contact {
-    padding: 5rem 0;
-}
-
-/* 移除未使用的CSS Grid樣式，因為HTML使用Bootstrap網格系統 */
-
-.info-item {
-    text-align: center;
-    padding: 2rem;
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.info-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-}
-
-.info-item i {
-    font-size: 2.5rem;
-    color: #f7bc51;
-    margin-bottom: 1rem;
-}
-
-.info-content h3 {
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.info-content p {
-    font-family: "Noto Sans TC", sans-serif;
-    font-size: 1rem;
-    color: #666;
-}
-
-/* 移除未使用的樣式，因為HTML使用Bootstrap按鈕 */
 
 /* ===== RESPONSIVE DESIGN ===== */
 
 /* Desktop Styles (≥992px) */
 @media (min-width: 992px) {
-    /* About Hero Section */
     .about-hero {
         height: 50vh;
         min-height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .about-hero .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-    
-    .about-hero .row {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .about-hero .col-12 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
     
     .about-hero-content h1 {
@@ -582,71 +195,17 @@ body {
         height: 500px;
     }
     
-    /* About Hero Section */
     .about-hero {
         height: 40vh;
         min-height: 300px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .about-hero .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-    
-    .about-hero .row {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .about-hero .col-12 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
 
     .about-hero-content h1 {
-        font-size: 1.25rem; /* 20px */
+        font-size: 1.25rem;
     }
 
     .about-hero-content p {
-        font-size: 0.9375rem; /* 15px */
-    }
-    
-    .about-story .container,
-    .about-team .container {
-        padding: 0 1rem;
-    }
-    
-    .story-text {
-        margin-top: 2rem;
-    }
-    
-    .story-text p {
-        font-size: 0.75rem; /* 12px */
-    }
-    
-    .team-text h3 {
-        font-size: 0.75rem; /* 12px */
-    }
-    
-    .member-info h3 {
-        font-size: 1rem; /* 16px */
-    }
-    
-    .member-info p {
-        font-size: 0.75rem; /* 12px */
-    }
-    
-    .member-image {
-        height: auto;
+        font-size: 0.9375rem;
     }
 }
 
@@ -656,43 +215,16 @@ body {
         height: 400px;
     }
     
-    /* About Hero Section */
     .about-hero-content h1 {
-        font-size: 1.125rem; /* 18px */
+        font-size: 1.125rem;
     }
 
     .about-hero-content p {
-        font-size: 0.8125rem; /* 13px */
-    }
-    
-    .story-text p {
-        font-size: 0.625rem; /* 10px */
-    }
-    
-    .team-text h3 {
-        font-size: 0.625rem; /* 10px */
-    }
-    
-    .member-info h3 {
-        font-size: 0.875rem; /* 14px */
-    }
-    
-    .member-info p {
-        font-size: 0.625rem; /* 10px */
+        font-size: 0.8125rem;
     }
     
     .section-title {
         font-size: 1.5rem;
-    }
-    
-    .carousel-navigation {
-        gap: 0.5rem;
-    }
-    
-    .carousel-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 1rem;
     }
 }
 
@@ -707,297 +239,5 @@ body {
     .row {
         margin-left: -0.5rem;
         margin-right: -0.5rem;
-    }
-}
-
-.story-image img,
-.team-member img {
-    width: 100%;
-    height: auto;
-    display: block;
-} 
-
-/* ===== LOVE STORY GRID ===== */
-/* Instagram風格的九宮格容器 */
-.love-story-grid {
-    margin: 3rem 0;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.grid-item {
-    position: relative;
-    aspect-ratio: 4/5;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-.grid-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.grid-content {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.grid-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.grid-item:hover .grid-image {
-    transform: scale(1.05);
-}
-
-.grid-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.3) 50%,
-        rgba(0, 0, 0, 0.7) 100%
-    );
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    display: flex;
-    align-items: flex-end;
-    padding: 1rem;
-}
-
-.grid-item:hover .grid-overlay {
-    opacity: 1;
-}
-
-.grid-text {
-    color: white;
-    text-align: left;
-    width: 100%;
-}
-
-.grid-text h3 {
-    font-family: 'ABeeZee', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    line-height: 1.2;
-}
-
-.grid-text p {
-    font-size: 0.85rem;
-    line-height: 1.3;
-    opacity: 0.9;
-    margin: 0;
-}
-
-/* 響應式設計 */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.75rem;
-        max-width: 600px;
-    }
-    
-    .grid-text h3 {
-        font-size: 1rem;
-    }
-    
-    .grid-text p {
-        font-size: 0.8rem;
-    }
-}
-
-@media (max-width: 576px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.5rem;
-        max-width: 100%;
-    }
-    
-    .grid-text h3 {
-        font-size: 0.9rem;
-        margin-bottom: 0.25rem;
-    }
-    
-    .grid-text p {
-        font-size: 0.75rem;
-    }
-    
-    .grid-overlay {
-        padding: 0.75rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0.4rem;
-    }
-    
-    .grid-text h3 {
-        font-size: 0.8rem;
-    }
-    
-    .grid-text p {
-        font-size: 0.7rem;
-    }
-    
-    .grid-overlay {
-        padding: 0.5rem;
-    }
-} 
-
-/* ===== SHOWCASE CAROUSEL STYLES ===== */
-
-.showcase-container {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.showcase-carousel {
-    position: relative;
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.showcase-item {
-    min-width: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    transform: scale(0.9);
-}
-
-.showcase-item.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.instagram-embed-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-/* Navigation Dots */
-.showcase-dots {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: none;
-    background-color: rgba(247, 188, 81, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.dot.active {
-    background-color: #F7BC51;
-    transform: scale(1.2);
-}
-
-.dot:hover {
-    background-color: rgba(247, 188, 81, 0.6);
-}
-
-/* Navigation Arrows */
-.showcase-nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(247, 188, 81, 0.9);
-    border: none;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    z-index: 10;
-}
-
-.showcase-nav:hover {
-    background: rgba(247, 188, 81, 1);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.showcase-nav.prev {
-    left: -25px;
-}
-
-.showcase-nav.next {
-    right: -25px;
-}
-
-.showcase-nav i {
-    color: white;
-    font-size: 18px;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .showcase-container {
-        max-width: 100%;
-        padding: 0 20px;
-    }
-    
-    .showcase-nav {
-        width: 40px;
-        height: 40px;
-    }
-    
-    .showcase-nav.prev {
-        left: 10px;
-    }
-    
-    .showcase-nav.next {
-        right: 10px;
-    }
-    
-    .instagram-embed-wrapper {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    .showcase-nav {
-        width: 35px;
-        height: 35px;
-    }
-    
-    .showcase-nav i {
-        font-size: 14px;
-    }
-    
-    .dot {
-        width: 10px;
-        height: 10px;
     }
 } 
