@@ -1,8 +1,8 @@
-# Summer Kisses - 關於我們頁面
+# Summer Kisses - 愛情故事頁面
 
 ## 專案概述
 
-Summer Kisses 是一間專注於製作愛情故事的影像工作室，這個專案是「關於我們」頁面的完整實現。頁面採用現代化的響應式設計，展現工作室的品牌理念、團隊介紹和聯絡資訊。
+Summer Kisses 是一間專注於製作愛情故事的影像工作室，這個專案是「愛情故事」頁面的完整實現。頁面採用現代化的響應式設計，展現工作室的愛情故事作品集和品牌理念。
 
 ## 專案特色
 
@@ -21,21 +21,26 @@ Summer Kisses 是一間專注於製作愛情故事的影像工作室，這個專
 ## 檔案結構
 
 ```
-SK_page2/
+lovestories/
 ├── css/                          # 樣式檔案
 │   ├── about.css                 # 關於我們頁面專用樣式
 │   ├── footer.css                # 頁尾樣式
 │   ├── header-navigation.css     # 頁首導航樣式
 │   ├── navigation-font.css       # 導航字體樣式
+│   ├── story-section.css         # 故事區塊樣式
 │   └── style.css                 # 主要樣式檔案
 ├── images/                       # 圖片資源
-│   ├── body002/                  # 作品圖片
-│   ├── body003/                  # 作品圖片
 │   ├── favicon/                  # 網站圖示
+│   │   └── SumKiss.png
 │   ├── header/                   # 頁首圖片
-│   ├── hero/                     # 主要橫幅圖片
-│   ├── highlights/               # 精選作品
-│   └── v1/                       # 團隊成員照片
+│   │   └── summerkiss-logo.png
+│   └── hero/                     # 主要橫幅圖片
+│       ├── 0416_01.png
+│       ├── 0416_19.png
+│       ├── 0416_20.png
+│       ├── 0416_21.png
+│       ├── 0501_08.png
+│       └── 0623_01.png
 ├── js/                          # JavaScript 檔案
 │   ├── aboutmain.js             # 關於我們主要功能
 │   ├── aboutscript.js           # 關於我們腳本
@@ -44,7 +49,9 @@ SK_page2/
 │   ├── footer.js                # 頁尾功能
 │   ├── main.js                  # 主要功能
 │   └── scroll.js                # 滾動監聽
-└── index.html                   # 主要 HTML 檔案
+├── index.html                   # 主要 HTML 檔案
+├── README.md                    # 專案說明文件
+└── .gitattributes              # Git 屬性設定
 ```
 
 ## 技術架構
@@ -55,6 +62,7 @@ SK_page2/
 - **JavaScript (ES6+)** - 互動功能實現
 - **Bootstrap 5.3.3** - 響應式框架
 - **Font Awesome 6.5.1** - 圖示庫
+- **Google Fonts** - 字體資源 (ABeeZee, Noto Sans TC)
 
 ### 主要功能模組
 
@@ -62,7 +70,8 @@ SK_page2/
 - 固定頂部導航列
 - 響應式漢堡選單
 - 滾動時背景色變化
-- 社群媒體圖示
+- 社群媒體圖示 (YouTube, Instagram, Home)
+- 導航連結至其他頁面 (關於我們、愛情故事、價格方案、常見Q&A)
 
 #### 2. Hero 區塊
 - 全螢幕背景圖片
@@ -97,7 +106,7 @@ SK_page2/
 1. 克隆專案到本地
 ```bash
 git clone [repository-url]
-cd SK_page2
+cd lovestories
 ```
 
 2. 使用本地伺服器開啟
@@ -135,6 +144,8 @@ php -S localhost:8000
 - 主要樣式：`css/style.css`
 - 關於我們專用樣式：`css/about.css`
 - 導航樣式：`css/header-navigation.css`
+- 故事區塊樣式：`css/story-section.css`
+- 頁尾樣式：`css/footer.css`
 
 ## 瀏覽器支援
 
