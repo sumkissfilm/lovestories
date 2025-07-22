@@ -223,9 +223,7 @@ body {
         font-size: 0.8125rem;
     }
     
-    .section-title {
-        font-size: 1.5rem;
-    }
+    /* 移除衝突的 section-title 設定，由 story-section.css 統一管理 */
 }
 
 /* ===== CONTAINER RESPONSIVE ADJUSTMENTS ===== */
