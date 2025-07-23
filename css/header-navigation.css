@@ -191,7 +191,7 @@ header.scrolled .navbar-brand img {
     font-family: "Noto Sans TC", sans-serif; /* 字體設定 */
     font-size: 10px;         /* 字體大小 */
     font-weight: 500;        /* 字體粗細 */
-    color: #fff;             /* 文字顏色 - 預設白色 */
+    color: #000;             /* 文字顏色 - 固定黑色 */
     margin-bottom: 8px;      /* 下方邊距 */
     transition: all 0.3s ease; /* 平滑過渡效果 */
 }
@@ -204,22 +204,10 @@ header.scrolled .navbar-brand img {
     display: block;          /* 區塊顯示 */
     width: 24px;             /* 線條寬度 */
     height: 2px;             /* 線條高度 */
-    background-color: #fff;  /* 線條顏色 - 預設白色 */
+    background-color: #000;  /* 線條顏色 - 固定黑色 */
     position: absolute;      /* 絕對定位 */
     transition: all 0.3s ease; /* 平滑過渡效果 */
     left: 0;                 /* 左側對齊 */
-}
-
-/* 滾動時漢堡按鈕線條變為黑色 */
-header.scrolled .navbar-toggler::before,
-header.scrolled .navbar-toggler::after,
-header.scrolled .navbar-toggler .icon-bar {
-    background-color: #000;
-}
-
-/* 滾動時漢堡按鈕文字變為黑色 */
-header.scrolled .navbar-toggler span {
-    color: #000;
 }
 
 /* 上方線條位置 */
@@ -588,25 +576,14 @@ body.menu-open {
         color: #333;         /* 滾動後文字顏色 - 深灰色 */
     }
     
-    /* 桌面版漢堡選單按鈕 - 預設白色 */
+    /* 桌面版漢堡選單按鈕 - 固定黑色 */
     .navbar-toggler span {
-        color: #fff;         /* 文字顏色 - 白色 */
+        color: #000;         /* 文字顏色 - 黑色 */
     }
     
     .navbar-toggler::before,
     .navbar-toggler::after,
     .navbar-toggler .icon-bar {
-        background-color: #fff; /* 線條顏色 - 白色 */
-    }
-    
-    /* 滾動後桌面版漢堡選單按鈕 - 變為黑色 */
-    header.scrolled .navbar-toggler span {
-        color: #000;         /* 文字顏色 - 黑色 */
-    }
-    
-    header.scrolled .navbar-toggler::before,
-    header.scrolled .navbar-toggler::after,
-    header.scrolled .navbar-toggler .icon-bar {
         background-color: #000; /* 線條顏色 - 黑色 */
     }
     
@@ -758,25 +735,14 @@ body.menu-open {
         z-index: 1002;      /* 提高層級 */
     }
     
-    /* 平板版漢堡選單按鈕顏色 - 預設白色 */
+    /* 平板版漢堡選單按鈕顏色 - 固定黑色 */
     .navbar-toggler span {
-        color: #fff;         /* 文字顏色 - 白色 */
+        color: #000;         /* 文字顏色 - 黑色 */
     }
     
     .navbar-toggler::before,
     .navbar-toggler::after,
     .navbar-toggler .icon-bar {
-        background-color: #fff; /* 線條顏色 - 白色 */
-    }
-    
-    /* 滾動後平板版漢堡選單按鈕 - 變為黑色 */
-    header.scrolled .navbar-toggler span {
-        color: #000;         /* 文字顏色 - 黑色 */
-    }
-    
-    header.scrolled .navbar-toggler::before,
-    header.scrolled .navbar-toggler::after,
-    header.scrolled .navbar-toggler .icon-bar {
         background-color: #000; /* 線條顏色 - 黑色 */
     }
     
@@ -828,25 +794,14 @@ body.menu-open {
         z-index: 1002;      /* 提高層級 */
     }
     
-    /* 手機版漢堡選單按鈕顏色 - 預設白色 */
+    /* 手機版漢堡選單按鈕顏色 - 固定黑色 */
     .navbar-toggler span {
-        color: #fff;         /* 文字顏色 - 白色 */
+        color: #000;         /* 文字顏色 - 黑色 */
     }
     
     .navbar-toggler::before,
     .navbar-toggler::after,
     .navbar-toggler .icon-bar {
-        background-color: #fff; /* 線條顏色 - 白色 */
-    }
-    
-    /* 滾動後手機版漢堡選單按鈕 - 變為黑色 */
-    header.scrolled .navbar-toggler span {
-        color: #000;         /* 文字顏色 - 黑色 */
-    }
-    
-    header.scrolled .navbar-toggler::before,
-    header.scrolled .navbar-toggler::after,
-    header.scrolled .navbar-toggler .icon-bar {
         background-color: #000; /* 線條顏色 - 黑色 */
     }
     
